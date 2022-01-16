@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Player</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="logo/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="logo/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="logo/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="logo/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="logo/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="logo/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="logo/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="logo/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="logo/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="logo/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+    <link rel="manifest" href="logo/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="logo/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <main>
+        <div class="header">
+            <img src="imgs/logo.jpg" alt="">
+            <h1 id="title">Music Player</h1>
+            <p></p>
+        </div>
+        <div class="content">
+            <div class="btns">
+                <button><i id="back" class="bi btn bi-skip-backward-circle"></i></button>
+                <button><i id="play" class="bi btn bi-play-circle"></i></button>
+                <button><i id="forward" class="bi btn bi-skip-forward-circle"></i></button>
+                <span id="addseconds">+2s</span>
+                <span id="minuseconds">-2s</span>
+                <span id="switch">Switch to music<i id="switchBtn" class="bi bi-arrow-clockwise"></i></span>
+                <input type="range"  id="volume">
+                <input type="range" value="100" id="speed" min="0" max="200">
+                <audio loop id="music" src="Musics/the-weeknd-blinding-lights-slowed-reverb.mp3"></audio>
+            </div>
+            <div class="text">
+                <div class="btns2">
+                    <i id="precedent" class="bi bi-skip-start-btn"></i>
+                    <h4 id="radio-music-title">song name</h4>
+                    <i id="next" class="bi bi-skip-end-btn"></i>
+                </div>
+                <p id="song-name"></p>
+            </div>
+            <div class="bg-color">
+                <div id="color1" class="color"></div>
+                <div id="color2" class="color"></div>
+                <div id="color3" class="color"></div>
+                <div id="color4" class="color"></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="loader">
+        <img id="loader-img" src="imgs/loader.gif" alt="Loading...">
+    </div>
+
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
